@@ -1,0 +1,240 @@
+/**  Basic Page CSS **/
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  position: relative;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: 2.3em;
+}
+
+ul{
+  list-style-position: outside;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #50c7e8;
+}
+
+
+.btn{
+  background-color: transparent;
+  border-color: #ff0043;
+  color: #ff0043;
+  font-size: 1.2rem;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+p{
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px){
+  h1{
+    font-size: 1.8em;
+  }
+  h3{
+    font-size: 0.9em;
+  }
+}
+
+/** Nav Stuff **/
+#logo-img{
+  width: 200px;
+}
+
+
+#locations-btn{
+  padding: 7px 20px;
+  transition: all .2s ease-out;
+  border-radius: 5px;
+  border: 1px solid #8dc53e;
+  background-color: white;
+  color: #8dc53e;
+}
+
+#locations-btn:hover{
+  background-color: #8dc53e;
+  color: white;
+}
+
+.navbar{
+  letter-spacing: -0.2px;
+  transition: all .3s ease-out;
+  padding: 30px 50px 10px 50px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.navbar li:not(:last-child){
+  margin-right: 20px;
+}
+
+.top-link.active-nav .nav-link,
+.top-link .nav-link:hover{
+  color: #00a94f !important;
+}
+
+.navbar.inbody{
+  padding: 10px 30px;
+  background-color: white;
+  
+}
+
+.navbar-toggler{
+  border-color: #666 !important;
+}
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' \
+    xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#666' \
+    stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' \
+    d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+@media screen and (max-width: 768px){
+  .navbar{
+    padding: 20px;
+    background-color: white;
+  }
+  .navbar-collapse{
+    text-align: center
+  }
+
+  .navbar li{
+    margin-right: 0;
+  }
+}
+
+/** footer **/
+.footer-container{
+  background-color: #fafafa;
+  max-width: 100%;
+  font-size: 0.8em;
+  padding: 50px 70px;
+  display: grid;
+  justify-items: start;
+  align-items: start;
+  grid-template-columns: repeat(2, 1fr) repeat(2, 230px);
+  grid-template-rows: repeat(2, 1fr);
+  /*grid-template-areas: 
+    "lo lo c l"
+    "lo lo c l"
+    "lo lo a s"
+    "lo lo a s";*/
+  grid-template-areas:
+    "logo logo company legal"
+    "logo logo company legal";
+}
+
+#footer h4{
+  font-family: Nunito;
+  font-weight: bold;
+  color: #2b2b2b;
+  font-size: 1.3em;
+}
+
+#footer .logo{
+  grid-area: logo;
+  align-self: center;
+  text-align: left;
+}
+
+#footer .logo img{
+  width: 250px;
+  max-width: 100%;
+}
+
+#footer .logo p{
+  margin-top: 10px;
+}
+
+#footer .social{
+  grid-area: social;
+}
+
+#footer .social img{
+  height: 25px;
+  margin-right: 25px;
+}
+
+#footer .apps{
+  display: grid;
+  grid-area: app;
+}
+
+#footer .apps img{
+  margin-bottom: 15px;
+  width: 130px;
+}
+
+#footer .footer-link{
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4a4a;
+  margin-top: 10px;
+  font-size: 1.0em;
+}
+
+#footer .footer-link:hover{
+  text-decoration: none;
+  color: #50c7e8;
+}
+
+#footer .company{
+  text-align: left;
+  display: grid;
+  grid-area: company;
+}
+
+#footer .legal{
+  text-align: left;
+  display: grid;
+  grid-area: legal;
+}
+
+@media screen and (max-width: 1000px) {
+  #footer .footer-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "company"
+      "legal"
+      "logo";
+  }
+
+  #footer .grid-section{
+    padding-top: 30px;
+  }
+
+  #footer .apps img{
+    width: 150px;
+  }
+
+  #footer .logo{
+    justify-self: center;
+  }
+}
+
+
+

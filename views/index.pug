@@ -1,0 +1,23 @@
+extends layout
+
+block links
+	link(rel='stylesheet', href='css/style-index.css')
+
+block content
+	#pages
+		
+		//- MAIN PAGE
+		#main.page
+			#carouselControlled.carousel.slide(data-ride="carousel")
+				.carousel-inner
+					.carousel-item.active(style="background-image: url(img/carousel-1.jpg);")
+						//-img.d-block(src="img/carousel-1.jpg")
+					.carousel-item(style="background-image: url(img/carousel-2.jpg);")
+						//-img.d-block(src="img/carousel-2.jpg")
+				a.carousel-control-prev(href="#carouselControlled" role="button" data-slide="prev" onclick="$('#carouselControlled').carousel('prev')")
+					span.carousel-control-prev-icon
+				a.carousel-control-next(href="#carouselControlled" role="button" data-slide="next" onclick="$('#carouselControlled').carousel('next')")
+					span.carousel-control-next-icon
+
+block endscripts
+	script(src='js/script.js')

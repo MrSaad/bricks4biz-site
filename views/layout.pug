@@ -1,0 +1,64 @@
+doctype html
+html
+  block head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=0')
+    script(src='js/prefixfree.min.js')
+    link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='img/favicon.ico', type='image/x-icon')
+    link(href='https://fonts.googleapis.com/css?family=Nunito', rel='stylesheet')
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", rel='stylesheet')
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+    link(href='css/style-layout.css', rel='stylesheet')
+    block links
+
+  title #{the_title}
+
+  body
+    header
+      nav.navbar.navbar-expand-md.navbar-light.fixed-top
+        a.navbar-brand(href='/')
+          img#logo-img(src='img/logo.png')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar-supported-content', aria-controls='navbar-supported-content', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+
+        #navbar-supported-content.collapse.navbar-collapse
+          ul.nav.navbar-nav.ml-auto
+            li#main-nav.nav-item.top-link
+              a.nav-link(href= '/') Main
+            li#about-nav.nav-item.top-link
+              a.nav-link(href='/') About
+            li#about-nav.nav-item.top-link
+              a.nav-link(href='/') Contact
+            li#locations-nav.nav-item
+              a#locations-btn.nav-link(href="/") Locations
+
+    block content
+
+    #footer
+      .footer-container
+        .logo.grid-section
+          a(href='/')
+            img(src='img/logo.png')
+          p Copyright &copy; 2018 Bricks4Biz. All Rights Reserved.
+        .social.grid-section
+          //- no content 
+        .apps.grid-section
+          //- no content
+        .company.grid-section
+          h4 Company
+          a.footer-link(href='/') About Us
+          a.footer-link(href='/') Blog
+          a.footer-link(href='/') Contact Us
+        .legal.grid-section
+          h4 Legal
+          a.footer-link(href='/') Privacy Policy
+          a.footer-link(href='/') Terms of Service
+
+      .empty-space
+
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js')
+  block endscripts
