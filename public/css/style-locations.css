@@ -1,0 +1,41 @@
+#locations-page{
+	padding: 160px 70px 20px 70px;
+	display: grid;
+	justify-items: center;
+	align-items: start;
+	grid-template-columns: repeat(1fr);
+	grid-template-rows: 100px repeat(2, 500px);
+	grid-template-areas:
+    "title"
+    "canada"
+    "usa";
+}
+
+#page-header{
+	grid-area: title;
+}
+
+.map{
+	width: 600px;
+	height: 100%;
+}
+
+#usa-map{
+	grid-area: usa;
+	
+}
+
+#can-map{
+	grid-area: canada;
+}
+
+@media screen and (max-width: 1000px){
+	#locations-page{
+		padding: 160px 20px 20px 20px;
+		grid-template-rows: 100px repeat(2, 300px);
+	}
+	.map{
+		width: 300px;
+		height: 100%;
+	}
+}

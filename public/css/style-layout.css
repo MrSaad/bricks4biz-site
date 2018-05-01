@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", sans-serif;
   font-weight: 100;
   margin: 0;
+  color: #454545;
 }
 
 p{
@@ -94,7 +95,7 @@ p{
 
 .top-link.active-nav .nav-link,
 .top-link .nav-link:hover{
-  color: #00a94f !important;
+  color: #50c7e8 !important;
 }
 
 .navbar.inbody{
@@ -214,7 +215,7 @@ p{
 }
 
 @media screen and (max-width: 1000px) {
-  #footer .footer-container{
+  .footer-container{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 

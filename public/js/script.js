@@ -1,4 +1,4 @@
-$(function(){
+$(() => {
 	"use strict"
 
 	//set Main nav item to highlighted

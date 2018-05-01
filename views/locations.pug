@@ -1,0 +1,23 @@
+extends layout
+
+block links
+	link(rel='stylesheet', href='css/style-locations.css')
+	link(rel='stylesheet', href='css/jqvmap.min.css')
+
+block content
+	#pages
+		
+		//- LOCATIONS PAGE
+		#locations-page
+			#page-header
+				h1 Locations
+			#can-map.map
+	
+			#usa-map.map
+			
+
+block endscripts
+	script(src='js/jquery.vmap.min.js')
+	script(src='js/jquery.vmap.usa.js')
+	script(src='js/jquery.vmap.canada.js')
+	script(src='js/script-locations.js')

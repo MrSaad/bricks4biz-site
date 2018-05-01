@@ -32,31 +32,30 @@ html
             li#about-nav.nav-item.top-link
               a.nav-link(href='/') Contact
             li#locations-nav.nav-item
-              a#locations-btn.nav-link(href="/") Locations
+              a#locations-btn.nav-link(href="/locations") Locations
 
     block content
 
-    #footer
-      .footer-container
-        .logo.grid-section
-          a(href='/')
-            img(src='img/logo.png')
-          p Copyright &copy; 2018 Bricks4Biz. All Rights Reserved.
-        .social.grid-section
-          //- no content 
-        .apps.grid-section
-          //- no content
-        .company.grid-section
-          h4 Company
-          a.footer-link(href='/') About Us
-          a.footer-link(href='/') Blog
-          a.footer-link(href='/') Contact Us
-        .legal.grid-section
-          h4 Legal
-          a.footer-link(href='/') Privacy Policy
-          a.footer-link(href='/') Terms of Service
+    #footer.footer-container
+      .logo.grid-section
+        a(href='/')
+          img(src='img/logo.png')
+        p Copyright &copy; 2018 Bricks4Biz. All Rights Reserved.
+      .social.grid-section
+        //- no content 
+      .apps.grid-section
+        //- no content
+      .company.grid-section
+        h4 Company
+        a.footer-link(href='/') About Us
+        a.footer-link(href='/') Blog
+        a.footer-link(href='/') Contact Us
+      .legal.grid-section
+        h4 Legal
+        a.footer-link(href='/') Privacy Policy
+        a.footer-link(href='/') Terms of Service
 
-      .empty-space
+    .empty-space
 
   script(src='https://code.jquery.com/jquery-3.2.1.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js')
