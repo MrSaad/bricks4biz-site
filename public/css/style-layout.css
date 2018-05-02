@@ -25,6 +25,7 @@ p{
 
 h1{
   font-size: 2.3em;
+  color: #50c7e8;
 }
 
 ul{
@@ -71,20 +72,20 @@ p{
   padding: 7px 20px;
   transition: all .2s ease-out;
   border-radius: 5px;
-  border: 1px solid #8dc53e;
+  border: 1px solid #ef8a1d;
   background-color: white;
-  color: #8dc53e;
+  color: #ef8a1d;
 }
 
 #locations-btn:hover{
-  background-color: #8dc53e;
+  background-color: #ef8a1d;
   color: white;
 }
 
 .navbar{
   letter-spacing: -0.2px;
   transition: all .3s ease-out;
-  padding: 30px 50px 10px 50px;
+  padding: 20px 50px 15px 50px;
   background-color: white;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
@@ -101,7 +102,6 @@ p{
 .navbar.inbody{
   padding: 10px 30px;
   background-color: white;
-  
 }
 
 .navbar-toggler{

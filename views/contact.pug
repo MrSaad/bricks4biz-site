@@ -1,0 +1,50 @@
+extends layout
+
+block links
+	link(rel='stylesheet', href='css/style-contact.css')
+
+block content
+	#pages
+
+		//- CONTACT PAGE
+		#contact.page
+			.content.container
+				
+				//- Title
+				#title.row
+					.col-xs
+						h1 Get in Touch
+				//- Submission Success Alert
+				if success
+					#submission-success.row
+						.alert.alert-success(role='alert') Thanks for reaching out, we'll get back to you shortly!
+				
+				//- Form
+				form#main-form(action='/requestcontact', method='POST', enctype='multipart/form-data')
+					.form-row
+						.form-group.full-col
+							label(for='name-input') FULL NAME*
+							input#name-input.form-control.form-control(name='name', type='text', placeholder='John Smith')
+						.form-group.col-md-6
+							label(for='org-input') ORGANIZATION*
+							input#org-input.form-control.form-control(name='org', type='text', placeholder='Acme Company')
+						.form-group.col-md-6
+							label(for='email-input') EMAIL*
+							input#org-input.form-control.form-control(name='email', type='email', placeholder='example@gmail.com')
+						.form-group.col-md-6
+							label(for='phone-input') PHONE NUMBER*
+							input#phone-input.form-control.form-control(name='phone', type='text', placeholder='625-888-8888')
+						.form-group.col-md-6
+							label(for='location-input') CITY, STATE, ZIP*
+							input#location-input.form-control.form-control(name='location', type='text', placeholder='Gotham, WA, 55555')
+						.form-group.full-col
+							label(for='message-input') MESSAGE*
+							textarea#message-input.form-control.form-control(name='msg', type='text', placeholder='Add Message (Optional)')
+						.form-group.full-col#submit-col
+							button.btn.btn(name='submit', type='submit') Send
+
+block endscripts
+	script(src='js/script-contact.js')
+
+
+

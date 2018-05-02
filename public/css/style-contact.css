@@ -1,0 +1,102 @@
+#pages{
+	padding: 160px 120px 20px 120px;
+}
+
+@media screen and (max-width: 768px){
+	#pages{
+		padding: 160px 20px 20px 20px;
+	}
+}
+
+p{
+  font-size: 0.8em;
+}
+
+.full-col{
+	width: 100%;
+}
+
+label{
+	font-size: 0.7em;
+	color: #606060;
+}
+
+
+#contact .container{
+	text-align: left;
+}
+
+#contact .row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#contact #title{
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+
+#contact .alert{
+	margin: auto;
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+#contact .alert-success{
+	background-color: #8dc53e22 !important;
+	border-color: #8dc53e !important;
+	color: #155724bb !important;
+}
+
+/*** Form Styles ***/
+
+#main-form{
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+#main-form .form-control::-moz-placeholder {
+	color: #4a4a4a;
+	opacity: 0.35;
+}
+#main-form .form-control:-ms-input-placeholder {
+	color: #4a4a4a;
+	opacity: 0.35;
+}
+#main-form .form-control::-webkit-input-placeholder {
+    color: #4a4a4a;
+    opacity: 0.35;
+}
+
+#main-form .form-row{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#main-form .form-control:focus{
+	border-color: #50c7e8;
+	box-shadow: 0 0 0 0.2rem rgba(80, 199, 232,.25);
+}
+
+#main-form #submit-col{
+	padding-top: 20px;
+	text-align: center;
+}
+
+#main-form button{
+	border-radius: 7px;
+	border: none;
+	width: 80%;
+	padding: 10px;
+	background-color: #8dc53e;
+	color: white;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	transition: all .15s ease;
+}
+
+#main-form button:hover, #main-form button:focus{
+	transform: translateY(-2px);
+	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}

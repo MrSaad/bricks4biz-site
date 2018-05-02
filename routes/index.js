@@ -11,4 +11,19 @@ router.get('/locations', function(req, res, next) {
   res.render('locations', { title: 'Bricks4Biz - Locations' });
 });
 
+/* GET Contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Bricks4Biz - Contact' });
+});
+
+/* GET Works page. */
+router.get('/works', function(req, res, next) {
+  res.render('works', { title: 'Bricks4Biz - How it Works' });
+});
+
+/* POST Email Submission */
+router.post('/requestcontact', function(req, res, next){
+	res.render('contact', {title: "Bricks4Biz - Contact", success: true});
+});
+
 module.exports = router;

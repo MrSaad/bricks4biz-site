@@ -1,0 +1,35 @@
+#pages{
+	padding: 160px 120px 20px 120px;
+}
+
+@media screen and (max-width: 768px){
+	#pages{
+		padding: 160px 20px 20px 20px;
+	}
+}
+
+#works-page{
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  justify-items: start;
+  align-items: start;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 30px;
+  grid-template-areas: 
+    "title"
+    "body";
+}
+
+#title{
+  display: grid;
+  justify-self: center;
+  grid-area: title;
+}
+
+#body{
+  text-align: left;
+  display: grid;
+  grid-area: body;
+}

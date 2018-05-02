@@ -1,5 +1,8 @@
-#locations-page{
+#pages{
 	padding: 160px 70px 20px 70px;
+}
+
+#locations-page{
 	display: grid;
 	justify-items: center;
 	align-items: start;
@@ -29,9 +32,11 @@
 	grid-area: canada;
 }
 
-@media screen and (max-width: 1000px){
-	#locations-page{
+@media screen and (max-width: 768px){
+	#pages{
 		padding: 160px 20px 20px 20px;
+	}
+	#locations-page{
 		grid-template-rows: 100px repeat(2, 300px);
 	}
 	.map{
