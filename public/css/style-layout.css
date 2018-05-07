@@ -160,7 +160,6 @@ p{
 #footer .logo{
   grid-area: logo;
   align-self: center;
-  text-align: left;
 }
 
 #footer .logo img{
