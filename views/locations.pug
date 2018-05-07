@@ -4,6 +4,7 @@ block links
 	link(rel='stylesheet', href='css/style-locations.css')
 	link(rel='stylesheet', href='css/jqvmap.min.css')
 
+
 block content
 	#pages
 		
@@ -14,11 +15,20 @@ block content
 
 					//- header
 					.modal-header
-						.modal-title placeholder
+						.modal-title 
+							h2 placeholder
 
 					//- body
 					.modal-body
-						p placeholder text
+						h2 John Smith
+						h3 CityName
+						.modal-contact-info
+							#phone
+								img(src='img/ic_phone_black_24px.svg')
+								a(href='tel:555-555-5555') 555-555-5555
+							#email
+								img(src='img/ic_email_black_24px.svg')
+								a(href="mailto:example@gmail.com") example@gmail.com
 
 		//- LOCATIONS PAGE
 		#locations-page

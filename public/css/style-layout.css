@@ -32,8 +32,13 @@ ul{
   list-style-position: outside;
 }
 
-a:hover{
+a{
   text-decoration: none;
+  color: #50c7e8;
+}
+
+
+a:hover{
   color: #50c7e8;
 }
 
@@ -139,14 +144,10 @@ p{
   align-items: start;
   grid-template-columns: repeat(2, 1fr) repeat(2, 230px);
   grid-template-rows: repeat(2, 1fr);
-  /*grid-template-areas: 
-    "lo lo c l"
-    "lo lo c l"
-    "lo lo a s"
-    "lo lo a s";*/
+  grid-row-gap: 30px;
   grid-template-areas:
     "logo logo company legal"
-    "logo logo company legal";
+    "logo logo social blank";
 }
 
 #footer h4{
@@ -180,26 +181,27 @@ p{
   margin-right: 25px;
 }
 
-#footer .apps{
-  display: grid;
-  grid-area: app;
-}
-
-#footer .apps img{
-  margin-bottom: 15px;
-  width: 130px;
-}
-
 #footer .footer-link{
   font-family: 'Open Sans', sans-serif;
   color: #4a4a4a;
   margin-top: 10px;
-  font-size: 1.0em;
+  font-size: 1.2em;
 }
 
 #footer .footer-link:hover{
   text-decoration: none;
   color: #50c7e8;
+}
+
+#footer .social{
+  text-align: left;
+  grid-area: social;
+}
+
+#footer .social img{
+  margin-top: 10px;
+  height: 25px;
+  margin-right: 25px;
 }
 
 #footer .company{
@@ -218,18 +220,16 @@ p{
   .footer-container{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    grid-row-gap: 20px;
     grid-template-areas: 
       "company"
       "legal"
+      "social"
       "logo";
   }
 
   #footer .grid-section{
     padding-top: 30px;
-  }
-
-  #footer .apps img{
-    width: 150px;
   }
 
   #footer .logo{

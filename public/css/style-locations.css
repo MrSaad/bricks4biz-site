@@ -44,3 +44,30 @@
 		height: 100%;
 	}
 }
+
+/*** MODAL STYLES ***/
+.modal-open{
+	padding-right: 0px !important;
+}
+
+.modal-body{
+	text-align: left;
+}
+
+.modal-body .modal-contact-info{
+	margin-top: 20px;
+	display: grid
+}
+
+.modal-body h2{
+	font-size: 1.8rem;
+}
+
+.modal-body h3{
+	font-size: 1.2rem;
+}
+
+.modal-body a{
+	margin-bottom: 0px;
+	margin-left: 10px;
+}

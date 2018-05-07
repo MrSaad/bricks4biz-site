@@ -49,8 +49,7 @@ $(() => {
 	});
 
 	$('#loc-modal').on('show.bs.modal', function (event) {
-		var modal = $(this)
-		modal.find('.modal-title').text(areaClicked);
+		$(".modal-title h2").text(areaClicked) 
 	})
 
 });
