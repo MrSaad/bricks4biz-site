@@ -173,33 +173,12 @@ p{
 }
 
 #footer .social{
-  grid-area: social;
-}
-
-#footer .social img{
-  height: 25px;
-  margin-right: 25px;
-}
-
-#footer .footer-link{
-  font-family: 'Open Sans', sans-serif;
-  color: #4a4a4a;
-  margin-top: 10px;
-  font-size: 1.2em;
-}
-
-#footer .footer-link:hover{
-  text-decoration: none;
-  color: #50c7e8;
-}
-
-#footer .social{
   text-align: left;
   grid-area: social;
 }
 
 #footer .social img{
-  margin-top: 10px;
+  margin-top: 20px;
   height: 25px;
   margin-right: 25px;
 }
@@ -214,6 +193,18 @@ p{
   text-align: left;
   display: grid;
   grid-area: legal;
+}
+
+#footer .footer-link{
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4a4a;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+#footer .footer-link:hover{
+  text-decoration: none;
+  color: #50c7e8;
 }
 
 @media screen and (max-width: 1000px) {
