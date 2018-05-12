@@ -8,16 +8,28 @@ block content
 		
 		//- MAIN PAGE
 		#main.page
-			#carouselControlled.carousel.slide(data-ride="carousel")
-				.carousel-inner
-					.carousel-item.active(style="background-image: url(img/carousel-1.jpg);")
-						//-img.d-block(src="img/carousel-1.jpg")
-					.carousel-item(style="background-image: url(img/carousel-2.jpg);")
-						//-img.d-block(src="img/carousel-2.jpg")
-				a.carousel-control-prev(href="#carouselControlled" role="button" data-slide="prev" onclick="$('#carouselControlled').carousel('prev')")
-					span.carousel-control-prev-icon
-				a.carousel-control-next(href="#carouselControlled" role="button" data-slide="next" onclick="$('#carouselControlled').carousel('next')")
-					span.carousel-control-next-icon
+			.content.container
+				#logo-row.row
+					.col-xs-12 
+						img(src='img/logo.png')
+				#title-row.row
+					.col-xs-12
+						h1 We Build. We Bond. We Grow
+				#subtitle-row.row
+					.col-xs-12
+						h2 Team building seminars and sessions with LEGO bricks and models
+		
+		#about-page
+			#title
+				h1 About
+			#body-txt
+				p Bricks 4 Biz specializes in team building seminars and sessions using innovative activities featuring LEGO Bricks and models. 
+				p This medium provides a non-threatening tool to elucidate better approaches to communication, teamwork, assessment of roles and responsibilities, peer to peer engagement and recognition.
+			#body-img
+				img(src="img/lego.jpg")
+					
+
+
 
 block endscripts
 	script(src='js/script-index.js')

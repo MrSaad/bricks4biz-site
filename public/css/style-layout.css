@@ -42,14 +42,6 @@ a:hover{
   color: #50c7e8;
 }
 
-
-.btn{
-  background-color: transparent;
-  border-color: #ff0043;
-  color: #ff0043;
-  font-size: 1.2rem;
-}
-
 .btn:hover{
   cursor: pointer;
 }
@@ -69,7 +61,7 @@ p{
 
 /** Nav Stuff **/
 #logo-img{
-  width: 200px;
+  width: 150px;
 }
 
 
@@ -90,7 +82,7 @@ p{
 .navbar{
   letter-spacing: -0.2px;
   transition: all .3s ease-out;
-  padding: 20px 50px 15px 50px;
+  padding: 0px 50px 0px 50px;
   background-color: white;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
@@ -105,7 +97,7 @@ p{
 }
 
 .navbar.inbody{
-  padding: 10px 30px;
+  padding: 0px 30px;
   background-color: white;
 }
 
@@ -121,7 +113,7 @@ p{
 
 @media screen and (max-width: 768px){
   .navbar{
-    padding: 20px;
+    padding: 0px 20px;
     background-color: white;
   }
   .navbar-collapse{
