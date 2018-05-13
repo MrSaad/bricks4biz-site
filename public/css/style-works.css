@@ -9,31 +9,29 @@
 }
 
 #works-page{
-  max-width: 1140px;
-  margin: auto;
   display: grid;
   justify-items: start;
   align-items: start;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-row-gap: 50px;
   grid-template-areas: 
-    "title"
-    "body"
+    "works-title"
+    "works-body"
     "faq-title"
-    "faq";
+    "faq-body";
 }
 
 #title{
   display: grid;
   justify-self: center;
-  grid-area: title;
+  grid-area: works-title;
 }
 
 #body{
   text-align: left;
   display: grid;
-  grid-area: body;
+  grid-area: works-body;
 }
 
 #faq-title{
@@ -45,11 +43,7 @@
 #faq{
   text-align: left;
   display: grid;
-  grid-area: faq;
-}
-
-p{
-  font-size: 1em;
+  grid-area: faq-body;
 }
 
 #body li{

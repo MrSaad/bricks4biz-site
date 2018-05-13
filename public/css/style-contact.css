@@ -8,16 +8,13 @@
 	}
 }
 
-p{
-  font-size: 0.8em;
-}
 
 .full-col{
 	width: 100%;
 }
 
 label{
-	font-size: 0.7em;
+	font-size: 0.7rem;
 	color: #606060;
 }
 

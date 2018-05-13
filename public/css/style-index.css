@@ -3,8 +3,8 @@
   text-align: center;
 }
 
-p{
-  font-size: 1.15em;
+#main p{
+  font-size: 1.1rem;
 }
 
 /** Main Page **/
@@ -13,9 +13,39 @@ p{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  padding: 200px 150px 0px 150px;
+}
+
+#main h1{
+  color: white;
+  font-size:  2.3rem;
+  margin-top: 20px;
+}
+
+#main h2{
+  color: #efefef;
+  font-size: 1.6rem;
+}
+
+#main .col-xs-12{
+  margin: auto;
+}
+
+#main #logo-row img{
+  width: 250px;
+}
+
+@media screen and (max-width: 768px){
+  #main{
+    padding: 200px 50px 0px 50px;
+  }
 }
 
 /** About Page **/
+#about-page p{
+  font-size: 1.1rem;
+}
+
 #about-page{
   padding: 60px 60px 20px 60px;
   max-width: 1140px;
@@ -58,42 +88,14 @@ p{
 @media screen and (max-width: 768px){
   #about-page{
     padding: 60px 20px 20px 20px;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(2, 1fr);
     grid-row-gap: 50px;
     grid-template-areas: 
       "title"
-      "body-text"
+      "body-txt"
       "body-img";
   }
-}
-
-#logo-row{
-  padding-top: 200px;
-}
-
-
-
-#logo-row img{
-  width: 300px;
-}
-
-#title-row h1{
-  margin-top: 20px;
-  color: white;
-}
-
-#subtitle-row{
-  padding: 0px 150px;
-}
-
-#subtitle-row h2{
-  color: #efefef;
-}
-
-.col-xs-12{
-  text-align: center;
-  margin: auto;
-  color: white;
 }
 
 
