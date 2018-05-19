@@ -19,8 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #454545;
 }
 
-p{
-  font-family: 'Open Sans', sans-serif;
+p, li{
+  font-family: 'helveticaneue-light', 'Open Sans', sans-serif;
+  color: #666;
   font-size: 1rem;
 }
 
@@ -98,6 +99,10 @@ a:hover{
   color: #50c7e8 !important;
 }
 
+.nav-link{
+  font-size: 1.1rem;
+}
+
 .navbar.inbody{
   padding: 0px 30px;
   background-color: white;
@@ -119,7 +124,8 @@ a:hover{
     background-color: white;
   }
   .navbar-collapse{
-    text-align: center
+    text-align: center;
+    padding-bottom: 20px;
   }
 
   .navbar li{

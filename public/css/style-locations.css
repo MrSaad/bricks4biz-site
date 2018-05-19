@@ -1,5 +1,5 @@
 #pages{
-	padding: 160px 70px 20px 70px;
+	padding: 140px 70px 20px 70px;
 }
 
 #locations-page{
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 768px){
 	#pages{
-		padding: 160px 20px 20px 20px;
+		padding: 140px 20px 20px 20px;
 	}
 	#locations-page{
 		grid-template-rows: 100px repeat(2, 300px);
