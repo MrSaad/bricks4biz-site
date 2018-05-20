@@ -2,6 +2,11 @@ $(() => {
 	"use strict"
 
 	var areaClicked = {};
+	var isMobile = false;
+
+	if (/Mobi/.test(navigator.userAgent)) {
+	    isMobile = true;
+	}
 
 	//add in-body to nav when page scrolls
 	$(window).scroll(function(){
@@ -22,6 +27,14 @@ $(() => {
 		hoverColor: '#d21245',
 		borderColor: '#d21245',
 		color: '#d2124522',
+		onRegionOver: function(event, code, region){
+			if (isMobile){
+				event.preventDefault();
+			
+				areaClicked = region+", Canada";
+				$('#loc-modal').modal();
+			}
+		},
 		onRegionClick: function(event, code, region){
 			event.preventDefault();
 			
@@ -40,6 +53,14 @@ $(() => {
 		hoverColor: '#0079c1',
 		borderColor: '#0079c1',
 		color: '#0079c122',
+		onRegionOver: function(event, code, region){
+			if (isMobile){
+				event.preventDefault();
+			
+				areaClicked = region+", Canada";
+				$('#loc-modal').modal();
+			}
+		},
 		onRegionClick: function(event, code, region){
 			event.preventDefault();
 			

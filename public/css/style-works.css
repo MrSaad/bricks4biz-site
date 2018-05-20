@@ -1,8 +1,17 @@
 #pages{
 	padding: 140px 120px 60px 120px;
+  background-color: #fbfbfb;
 }
 
-#works-page{
+.sec{
+  padding: 30px 50px 30px 50px;
+  border-radius: 5px;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+#works-section{
+  background-color: white;
   max-width: 800px;
   margin:  auto;
   display: grid;
@@ -10,23 +19,41 @@
   align-items: start;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 40px;
+  grid-row-gap: 30px;
   grid-template-areas: 
     "works-title"
     "works-body"
-    "faq-title"
-    "faq-body";
 }
 
-#title{
+#works-title{
   display: grid;
   grid-area: works-title;
 }
 
-#body{
+#works-body{
   text-align: left;
   display: grid;
   grid-area: works-body;
+}
+
+#works-body li{
+  margin-top: 20px;
+}
+
+#faq-section{
+  background-color: white;
+  max-width: 800px;
+  margin:  auto;
+  margin-top: 20px;
+  display: grid;
+  justify-items: start;
+  align-items: start;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 30px;
+  grid-template-areas: 
+    "faq-title"
+    "faq-body"
 }
 
 #faq-title{
@@ -34,22 +61,18 @@
   grid-area: faq-title;
 }
 
-#faq{
+#faq-body{
   text-align: left;
   display: grid;
   grid-area: faq-body;
 }
 
-#faq h3{
+#faq-body h3{
   margin-bottom: 20px;
   color: #ef8a1d;
 }
 
-#faq h3:not(:first-child){
-  margin-top: 20px;
-}
-
-#body li{
+#faq-body h3:not(:first-child){
   margin-top: 20px;
 }
 
@@ -59,6 +82,6 @@
   }
 
   #pages{
-    padding: 140px 60px 20px 60px;
+    padding: 140px 20px 20px 20px;
   }
 }
