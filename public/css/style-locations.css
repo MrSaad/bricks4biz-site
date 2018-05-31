@@ -52,6 +52,15 @@
 
 .modal-body{
 	text-align: left;
+	padding: 0px 25px;
+}
+
+.modal-body .single-contact{
+	padding: 20px 0px;
+}
+
+.modal-body .single-contact:not(:last-child){
+	border-bottom: 1px solid grey;
 }
 
 .modal-body .modal-contact-info{

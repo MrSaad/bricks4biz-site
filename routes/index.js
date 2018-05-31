@@ -1,5 +1,8 @@
 var express = require('express');
+var locations = require('../models/locations.js');
 var router = express.Router();
+
+let obj = 
 
 /* GET Home page. */
 router.get('/', function(req, res, next) {
@@ -19,6 +22,14 @@ router.get('/contact', function(req, res, next) {
 /* GET Works page. */
 router.get('/works', function(req, res, next) {
   res.render('works', { title: 'Bricks4Biz - How it Works' });
+});
+
+/* GET location data */
+router.get('/locdata/:areacode', function(req, res, next) {
+	let areacode = req.params.areacode; 
+	let areadata = locations.filter(o => o.code === areacode);
+
+	res.json(areadata);
 });
 
 /* POST Email Submission */
