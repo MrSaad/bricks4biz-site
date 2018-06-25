@@ -67,26 +67,32 @@ a:hover{
   width: 150px;
 }
 
-
-#locations-btn{
-  padding: 7px 20px;
-  transition: all .2s ease-out;
+#cta-btn{
   border-radius: 5px;
-  border: 1px solid #ef8a1d;
-  background-color: white;
-  color: #ef8a1d;
-}
-
-#locations-btn:hover{
+  border: none;
+  width: 100%;
+  padding: 6px 20px;
   background-color: #ef8a1d;
   color: white;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  transition: all .15s ease;
+}
+
+#cta-btn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+#cta-btn:focus{
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  transform: translateY(0px);
 }
 
 .navbar{
   letter-spacing: -0.2px;
   transition: all .3s ease-out;
   padding: 0px 50px 0px 50px;
-  background-color: white;
+  background-color: rgba(255,255,255,0.9);
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 
@@ -100,7 +106,7 @@ a:hover{
 }
 
 .nav-link{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .navbar.inbody{

@@ -1,3 +1,7 @@
+h1{
+	color: #ef8a1d;
+}
+
 #pages{
 	padding: 140px 120px 20px 120px;
 }
@@ -73,8 +77,8 @@ label{
 }
 
 #main-form .form-control:focus{
-	border-color: #50c7e8;
-	box-shadow: 0 0 0 0.2rem rgba(80, 199, 232,.25);
+	border-color: #ef8a1d;
+	box-shadow: 0 0 0 0.2rem #ef8a1d40;
 }
 
 #main-form #submit-col{
@@ -93,7 +97,12 @@ label{
 	transition: all .15s ease;
 }
 
-#main-form button:hover, #main-form button:focus{
+#main-form button:hover{
 	transform: translateY(-2px);
 	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+#main-form button:focus{
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  transform: translateY(0px);
 }
