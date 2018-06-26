@@ -2,8 +2,6 @@ var express = require('express');
 var locations = require('../models/locations.js');
 var router = express.Router();
 
-let obj = 
-
 /* GET Home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Bricks4Biz - Corporate Team Building' });

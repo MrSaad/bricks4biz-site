@@ -97,8 +97,11 @@
 
 /** About B Page **/
 #about-b{
-  background-color: #fbfbfb;
-  padding: 50px 100px;
+	background-color: #fbfbfb;
+	padding: 50px 0px;
+}
+
+#about-b-inner{
   display: grid;
   justify-items: center;
   align-items: center;
@@ -174,7 +177,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  #about-b{
+  #about-b-inner{
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -193,7 +196,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  #about-b{
+  #about-b-inner{
     padding: 50px 50px;
     justify-items: center;
     align-items: center;

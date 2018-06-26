@@ -1,6 +1,9 @@
 $(() => {
 	"use strict"
 
+	//set Locations nav item to highlighted
+	$('#locations-nav').addClass('active-nav');
+
 	var areaClicked = "";
 	var modalHtml = "";
 
