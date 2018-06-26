@@ -1,0 +1,22 @@
+#error{
+	padding-top: 200px;
+}
+
+#error h1{
+	margin-bottom: 10px;
+}
+
+#error h3{
+	color: grey;
+	margin-bottom: 50px;
+}
+
+#error a{
+	font-size: 1.3rem;
+	color: grey;
+}
+
+#error a:hover, a:active{
+	text-decoration: none;
+	color: #50c7e8;
+}

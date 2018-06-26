@@ -1,6 +1,14 @@
 extends layout
 
+block links
+	link(rel='stylesheet', href='css/style-error.css')
+
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+
+	#error
+		h1 Page not found!
+		h3 Sorry, there seems to be nothing here :(
+		a(href='/') Return to the front page
+
+block endscripts
+	script(src='js/script-error.js')
