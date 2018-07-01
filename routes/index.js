@@ -22,6 +22,11 @@ router.get('/works', function(req, res, next) {
   res.render('works', { title: 'Bricks4Biz - How it Works' });
 });
 
+/* GET Legal page. */
+router.get('/legal', function(req, res, next) {
+  res.render('legal', { title: 'Bricks4Biz - Privacy Policy & Terms of Service' });
+});
+
 /* GET location data */
 router.get('/locdata/:areacode', function(req, res, next) {
 	let areacode = req.params.areacode; 

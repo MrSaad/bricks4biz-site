@@ -256,9 +256,11 @@
 
 #reach h1{
   color:  white;
+  margin-bottom: 20px;
 }
 
 #reach h3{
+  font-size:  1.4rem;
   font-style:  italic;
   color:  #eee;
 }
