@@ -7,15 +7,33 @@
 	justify-items: center;
 	align-items: start;
 	grid-template-columns: repeat(1fr);
-	grid-template-rows: 100px repeat(2, 500px);
+	grid-template-rows: 100px 50px 500px 50px 500px;
 	grid-template-areas:
     "title"
+    "canada-title"
     "canada"
+    "usa-title"
     "usa";
+  grid-gap: 20px;
+
+}
+
+p{
+	font-size: 1.5rem;
 }
 
 #page-header{
 	grid-area: title;
+}
+
+#page-header h2{
+	font-size: 1.4rem;
+	font-style: italic;
+  color: #555;
+}
+
+h3{
+	color: #ef8a1d;
 }
 
 .map{
@@ -23,9 +41,17 @@
 	height: 100%;
 }
 
+#usa-title{
+	grid-area: usa-title;
+}
+
 #usa-map{
+	margin-top: -70px;
 	grid-area: usa;
-	
+}
+
+#can-title{
+	grid-area: canada-title;
 }
 
 #can-map{
@@ -37,7 +63,7 @@
 		padding: 140px 20px 20px 20px;
 	}
 	#locations-page{
-		grid-template-rows: 100px repeat(2, 300px);
+		grid-template-rows: 100px 30px 300px 30px 300px;
 	}
 	.map{
 		width: 300px;
