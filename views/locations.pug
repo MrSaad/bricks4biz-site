@@ -44,6 +44,16 @@ block content
 			#usa-title
 				h3 USA
 			#usa-map.map
+
+		#international-locs-page
+			#international-title.row
+				.col-xs-12
+					h3 International
+			#international-locs.row
+				each loc in iLocs
+					.col-xs-12.col-md-4
+						p.country-name= loc.country
+					
 			
 
 block endscripts

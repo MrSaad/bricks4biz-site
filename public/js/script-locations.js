@@ -55,6 +55,15 @@ $(() => {
 			});
 	}
 
+	function fetchModalInfoInternational(country){
+		fetch('/ilocdata/'+country)
+			.then(res => res.json())
+			.then(json => {
+				modalHtml = createModalHtml(json);
+				$('#loc-modal').modal();
+			});
+	}
+
 	// Canada Map
 	$('#can-map').vectorMap({
 		map: 'canada_en',
@@ -99,6 +108,10 @@ $(() => {
 			event.preventDefault();
 			fetchModalInfo("USA", code, region);
 		}
+	});
+
+	$('.country-name').on("click", function(event){
+		fetchModalInfoInternational($(event.target).text());
 	});
 
 	// Add appropriate contact info to displayed modal

@@ -1,5 +1,6 @@
 var express = require('express');
 var locations = require('../models/locations.js');
+var iLocations = require('../models/international-locations.js');
 var router = express.Router();
 
 /* GET Home page. */
@@ -9,7 +10,7 @@ router.get('/', function(req, res, next) {
 
 /* GET Locations page. */
 router.get('/locations', function(req, res, next) {
-  res.render('locations', { title: 'Bricks4Biz - Locations' });
+  res.render('locations', { title: 'Bricks4Biz - Locations', iLocs: iLocations });
 });
 
 /* GET Contact page. */
@@ -31,6 +32,14 @@ router.get('/legal', function(req, res, next) {
 router.get('/locdata/:areacode', function(req, res, next) {
 	let areacode = req.params.areacode; 
 	let areadata = locations.filter(o => o.code === areacode);
+
+	res.json(areadata);
+});
+
+/* GET location data */
+router.get('/ilocdata/:country', function(req, res, next) {
+	let country = req.params.country; 
+	let areadata = iLocations.filter(o => o.country === country);
 
 	res.json(areadata);
 });
