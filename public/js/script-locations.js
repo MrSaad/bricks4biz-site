@@ -56,6 +56,7 @@ $(() => {
 	}
 
 	function fetchModalInfoInternational(country){
+		areaClicked = country;
 		fetch('/ilocdata/'+country)
 			.then(res => res.json())
 			.then(json => {
