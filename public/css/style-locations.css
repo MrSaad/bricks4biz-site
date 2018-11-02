@@ -10,10 +10,10 @@
 	grid-template-rows: 100px 50px 500px 50px 500px;
 	grid-template-areas:
     "title"
-    "canada-title"
-    "canada"
     "usa-title"
-    "usa";
+    "usa"
+    "canada-title"
+    "canada";
   grid-gap: 20px;
 
 }
@@ -51,10 +51,12 @@ h3{
 }
 
 #can-title{
+	margin-top: -80px;
 	grid-area: canada-title;
 }
 
 #can-map{
+	margin-top: -80px;
 	grid-area: canada;
 }
 
@@ -75,7 +77,6 @@ h3{
 }
 
 #international-title{
-	margin-top: -80px;
 	margin-bottom: 20px;
 }
 
