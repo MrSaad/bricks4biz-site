@@ -1,8 +1,8 @@
 #pages{
 	padding: 140px 120px 60px 120px;
   background-color: #fbfbfb;
-  background: #fbfbfb url("../img/background1.jpg") no-repeat center top;
-  background-size: 100% auto;
+  background: #fbfbfb url("../img/background-works.png") no-repeat center top fixed;
+  background-size:   auto 100%;
 }
 
 .sec{
