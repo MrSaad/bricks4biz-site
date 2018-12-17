@@ -204,17 +204,28 @@
 }
 
 /** About b2 Page **/
+#about-b2{
+	padding: 50px 0px;
+	background-color: #eceeee;
+}
+
 #about-b2 .col-xs-12{
 	margin: auto;
 }
 
 #about-b2 img{
-	max-width: 500px;
+	max-width: 1000px;
+}
+
+@media screen and (max-width: 1000px) {
+	#about-b2 img{
+		max-width: 700px;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	#about-b2 img{
-		max-width: 300px;
+		width: 100%;
 	}
 }
 
