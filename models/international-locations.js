@@ -78,10 +78,10 @@ var iLocations = [
 	},
 	{
 		country: "New Zealand",
-		city: "Waikato – Hamilton",
-		person: "WenYi Lin",
-		email: "wlin@bricks4biz.com",
-		phone: "+64212262901"
+		city: "Auckland and Hamilton",
+		person: "Kim Taylor",
+		email: "nz@bricks4biz.com",
+		phone: "0800-534-645"
 	},
 	{
 		country: "Peru",

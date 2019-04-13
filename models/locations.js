@@ -1,10 +1,10 @@
 var locations = [
 	{
 		code: "on",
-		city: "Sarnia",
-		person: "Stephen Devlin",
-		email: "sdevlin@bricks4biz.com",
-		phone: "519-466-4217"
+		city: "-",
+		person: "Alanna Kresin",
+		email: "-",
+		phone: "705-779-2351"
 	},
 	{
 		code: "wa",
@@ -27,13 +27,19 @@ var locations = [
 		email: "lbarton@bricks4biz.com",
 		phone: "425-275-6828"
 	},
-
 	{
 		code: "bc",
 		city: "Surrey",
 		person: "Harman Sidhu",
 		email: "hsidhu@bricks4biz.com",
 		phone: "778-822-5665"
+	},
+	{
+		code: "bc",
+		city: "Vancouver - Richmond",
+		person: "Rachel Tan",
+		email: "-",
+		phone: "604-250-6665"
 	},
 	{
 		code: "ab",
@@ -252,6 +258,7 @@ var locations = [
 		email: "pmasters@bricks4biz.com",
 		phone: "505-433-2330"
 	},
+
 	{
 		code: "tx",
 		city: "Ellis County",
@@ -351,6 +358,13 @@ var locations = [
 		phone: "706-530-1646"
 	},
 	{
+		code: "az",
+		city: "Arizona",
+		person: "Dawn Craig",
+		email: "dcraig@bricks4biz.com",
+		phone: "602-723-0476"
+	},
+	{
 		code: "tn",
 		city: "Knox County – Knoxville",
 		person: "Chris Howard",
@@ -363,6 +377,13 @@ var locations = [
 		person: "Bobbie-Jo Grinder",
 		email: "bgrinder@bricks4biz.com",
 		phone: "252-320-3973"
+	},
+	{
+		code: "nc",
+		city: "Director of Franchise Support",
+		person: "Alison Vickers",
+		email: "avickers@creativelearningcorp.com",
+		phone: "904-824-3133 Ext 1"
 	},
 	{
 		code: "ga",
