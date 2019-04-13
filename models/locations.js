@@ -1,7 +1,7 @@
 var locations = [
 	{
 		code: "on",
-		city: "-",
+		city: "Sault Ste. Marie",
 		person: "Alanna Kresin",
 		email: "-",
 		phone: "705-779-2351"
