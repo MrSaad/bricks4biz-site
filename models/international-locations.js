@@ -14,6 +14,13 @@ var iLocations = [
 		phone: "0450 332 435"
 	},
 	{
+		country: "Panama",
+		city: "Park City",
+		person: "Maria Valderrama",
+		email: "mvalderrama@bricks4biz.com",
+		phone: "507 394 4620"
+	},	
+	{
 		country: "Austria",
 		city: "Vienna/Moedling",
 		person: "Maria & Alfred Reinprecht",
