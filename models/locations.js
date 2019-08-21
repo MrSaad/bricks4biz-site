@@ -84,6 +84,13 @@ var locations = [
 		phone: "408-750-4697"
 	},
 	{
+		code: "ca",
+		city: "Santa Clarita",
+		person: "Carol Lovell",
+		email: "-",
+		phone: "909-973-0107"
+	},
+	{
 		code: "co",
 		city: "Westminster",
 		person: "Ammon Stotts",
