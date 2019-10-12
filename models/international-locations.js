@@ -70,6 +70,13 @@ var iLocations = [
 		phone: "+353 1890 252 647"
 	},
 	{
+		country: "Italy",
+		city: "-",
+		person: "Vincenzo Patti",
+		email: "italy@bricks4biz.com",
+		phone: "3402249265"
+	},
+	{
 		country: "Mexico",
 		city: "_",
 		person: "Mayra Leal",

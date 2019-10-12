@@ -3,8 +3,8 @@ var locations = [
 		code: "on",
 		city: "Sault Ste. Marie",
 		person: "Alanna Kresin",
-		email: "-",
-		phone: "705-779-2351"
+		email: "akresin@bricks4kidz.com",
+		phone: "705-541-1180"
 	},
 	{
 		code: "wa",
@@ -170,9 +170,16 @@ var locations = [
 	{
 		code: "ms",
 		city: "",
-		person: "Lacey Griffin Fondren ",
+		person: "Lacey Griffin Fondren",
 		email: "lfondren@bricks4kidz.com",
 		phone: "646-853-3375"
+	},
+	{
+		code: "tn",
+		city: "Knoxville",
+		person: "Chris & Maria Howard",
+		email: "choward@bricks4kidz.com",
+		phone: "865-250-8560"
 	},
 
 ]
