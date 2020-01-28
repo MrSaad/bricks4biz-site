@@ -188,7 +188,13 @@ var locations = [
 		email: "Ben.leblois@bricks4biz.com",
 		phone: "678-431-5307"
 	},
-
+	{
+		code: "ab",
+		city: "_",
+		person: "Mick Boisselle",
+		email: "mboisselle@bricks4biz.com ",
+		phone: "_"
+	},
 ]
 
 module.exports = locations;
