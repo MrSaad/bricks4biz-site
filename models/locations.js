@@ -10,7 +10,7 @@ var locations = [
 		code: "wa",
 		city: "Tacoma",
 		person: "Tim & Kristi Walker",
-		email: "twalker@bricks4biz.com",
+		email: "kwalker@bricks4biz.com",
 		phone: "253-777-3481"
 	},
 	{
@@ -180,6 +180,13 @@ var locations = [
 		person: "Chris & Maria Howard",
 		email: "choward@bricks4kidz.com",
 		phone: "865-250-8560"
+	},
+	{
+		code: "ga",
+		city: "_",
+		person: "Ben Leblois",
+		email: "Ben.leblois@bricks4biz.com",
+		phone: "678-431-5307"
 	},
 
 ]

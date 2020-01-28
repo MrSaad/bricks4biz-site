@@ -174,6 +174,13 @@ var iLocations = [
 		email: "agoodridge@bricks4biz.com",
 		phone: "07715801443"
 	},
-	]
+	{
+		country: "United Kingdom",
+		city: "_",
+		person: "Caroline Cobb",
+		email: "kent@bricks4biz.com",
+		phone: "07814371279"
+	},
+]
 
 module.exports = iLocations;
