@@ -1,5 +1,12 @@
 var locations = [
 	{
+		code: "pe",
+		city: "-",
+		person: "Amber Jadis",
+		email: "ajadis@bricks4biz.com",
+		phone: "902-393-2439"
+	},
+	{
 		code: "on",
 		city: "Sault Ste. Marie",
 		person: "Alanna Kresin",
